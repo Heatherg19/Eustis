@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Products – Eustis Mortgage Alliance</title>
+
+<style>
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://eustisalliance.com/wp-content/uploads/2026/02/AvenirNextCond-font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://eustisalliance.com/wp-content/uploads/2026/02/AvenirNextCond-font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://eustisalliance.com/wp-content/uploads/2026/02/Avenirfont.ttf') format('truetype');
+}
+
+@media (max-width: 768px) {
+  nav.topnav { padding: 0 16px; height: 60px; }
+  .nav-links a:not(.nav-btn) { display: none; }
+  .nav-btn { font-size: 13px !important; padding: 7px 12px !important; }
+  .hero { padding: 24px 16px 20px; }
+  .hero h1 { font-size: 30px !important; }
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+  .cat-lbl { display: none; }
+  .sdiv { display: none; }
+  .nav-item {
+    padding: 8px 14px;
+    font-size: 13px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .nav-item.active {
+    border-left: none;
+    border-bottom-color: var(--teal);
+  }
+  .nav-item.sub { display: none; }
+  .content { padding: 20px 16px; }
+  .prod-name { font-size: 22px !important; }
+  .highlights { grid-template-columns: repeat(2, 1fr); }
+  .sections { grid-template-columns: 1fr; }
+  .subtabs { gap: 6px; }
+  .subtab { font-size: 12px !important; padding: 6px 10px !important; }
+  .sec-link { font-size: 14px !important; }
+  .ann-t { font-size: 13px !important; }
+  .ann-d { font-size: 11px !important; }
+  .prod-desc { font-size: 14px !important; }
+  .hl-val { font-size: 15px !important; }
+  footer { padding: 16px; font-size: 11px; }
+}
+
+@media (max-width: 400px) {
+  .highlights { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 24px !important; }
+  .prod-name { font-size: 20px !important; }
+}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--teal:#007367;--teal-dark:#005a50;--teal-light:#e8f5f3;--navy:#2d2d2d;--navy2:#2d2d2d;--charcoal:#2d2d2d;--gray:#6b7280;--gray-light:#9ca3af;--border:#e5e7eb;--off:#f9fafb;--white:#fff;}
+html{scroll-behavior:smooth;}
+body{font-family:'Avenir Next Condensed','Avenir',Arial,sans-serif;background:var(--off);color:var(--charcoal);line-height:1.6;}
+nav.topnav{background:#ffffff;border-bottom:3px solid var(--teal);padding:0 32px;height:76px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.08);}
+.nav-logo svg{height:34px;width:auto;}
+.nav-links{display:flex;gap:6px;align-items:center;}
+.nav-links a{color:var(--charcoal);font-size:16px;font-weight:500;text-decoration:none;padding:8px 14px;border-radius:6px;transition:all .15s;}
+.nav-links a:hover{color:var(--teal);background:var(--teal-light);}
+.nav-links a.cur{color:#fff;background:var(--teal);}
+.nav-btn{background:var(--teal);color:#fff!important;font-weight:600!important;}
+.nav-btn:hover{background:var(--teal-dark)!important;}
+.hero{background:#007367;color:#fff;padding:44px 32px 40px;border-bottom:3px solid var(--teal);}
+.hero-inner{max-width:1160px;margin:0 auto;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.hero h1{font-size:44px;font-weight:700;letter-spacing:-.5px;line-height:1.1;}
+.hero h1 span{color:var(--teal);}
+.hero p{color:rgba(255,255,255,.6);font-size:14px;margin-top:6px;}
+.hero-docs{display:flex;gap:8px;flex-wrap:wrap;}
+.hero-doc{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);text-decoration:none;padding:9px 16px;border-radius:8px;font-size:12.5px;font-weight:500;transition:all .15s;}
+.hero-doc:hover{background:var(--teal);border-color:var(--teal);color:#fff;}
+.layout{display:flex;max-width:1160px;margin:0 auto;}
+.sidebar{width:230px;flex-shrink:0;background:var(--white);border-right:1px solid var(--border);position:sticky;top:76px;height:calc(100vh - 76px);overflow-y:auto;padding:14px 0;}
+.sidebar::-webkit-scrollbar{width:3px;}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border);}
+.cat-lbl{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-light);padding:14px 18px 5px;}
+.nav-item{display:flex;align-items:center;padding:7px 18px;font-size:15px;font-weight:500;color:var(--gray);cursor:pointer;border-left:3px solid transparent;transition:all .12s;text-decoration:none;background:none;border-top:none;border-right:none;border-bottom:none;width:100%;text-align:left;font-family:'Avenir Next Condensed','Avenir',Arial,sans-serif;}
+.nav-item:hover{color:var(--teal);background:var(--teal-light);}
+.nav-item.active{color:var(--teal);background:var(--teal-light);border-left-color:var(--teal);font-weight:600;}
+.nav-item.sub{padding-left:30px;font-size:14px;color:var(--gray-light);}
+.nav-item.sub:hover{color:var(--teal);background:var(--teal-light);}
+.nav-item.sub.active{color:var(--teal);border-left-color:var(--teal);font-weight:600;}
+.sdiv{height:1px;background:var(--border);margin:8px 18px;}
+.content{flex:1;padding:32px 36px;min-height:calc(100vh - 76px);}
+.panel{display:none;}
+.panel.active{display:block;animation:fi .18s ease;}
+@keyframes fi{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.subtabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.subtab{background:var(--white);border:1.5px solid var(--border);color:var(--gray);font-size:14px;font-weight:600;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .12s;font-family:'Avenir Next Condensed','Avenir',Arial,sans-serif;}
+.subtab:hover{border-color:var(--teal);color:var(--teal);}
+.subtab.active{background:var(--teal);border-color:var(--teal);color:#fff;}
+.subpanel{display:none;}
+.subpanel.active{display:block;}
+.prod-head{display:flex;align-items:center;gap:12px;margin-bottom:4px;}
+.prod-icon{width:44px;height:44px;background:var(--teal);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.prod-icon svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.prod-name{font-size:32px;font-weight:700;color:#2d2d2d;letter-spacing:-.3px;}
+.prod-tag{display:inline-flex;align-items:center;background:var(--teal-light);color:var(--teal);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px;}
+.prod-desc{font-size:16px;line-height:1.75;color:#4b5563;margin-bottom:20px;max-width:660px;}
+.highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:24px;}
+.hl{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--teal);border-radius:8px;padding:12px 14px;}
+.hl-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-light);margin-bottom:5px;}
+.hl-val{font-size:18px;font-weight:700;color:#2d2d2d;}
+.sections{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-bottom:20px;}
+.sec{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.sec-h{background:#2d2d2d;color:#fff;padding:10px 14px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+.sec-b{padding:10px 14px;}
+.sec-link{display:flex;align-items:flex-start;gap:6px;font-size:15px;color:var(--teal);padding:6px 0;border-bottom:1px solid var(--off);text-decoration:none;font-weight:500;transition:color .12s;line-height:1.4;}
+.sec-link:last-child{border-bottom:none;}
+.sec-link:hover{color:var(--teal-dark);}
+.sec-link::before{content:'›';flex-shrink:0;margin-top:1px;}
+.full{grid-column:1/-1;}
+.ann{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--off);gap:10px;}
+.ann:last-child{border-bottom:none;}
+.ann-t{font-size:14px;color:var(--charcoal);}
+.ann-d{font-size:13px;color:var(--gray-light);white-space:nowrap;font-weight:500;}
+footer{background:#2d2d2d;color:rgba(255,255,255,.4);font-size:13px;line-height:1.7;padding:22px 32px;text-align:center;}
+footer a{color:rgba(255,255,255,.5);text-decoration:none;margin:0 6px;}
+footer a:hover{color:var(--teal);}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="https://eustisalliance.com" style="text-decoration:none;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMTYwIDUxNS40NiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzAwNzM2NzsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjNGM0YzRjOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjIwMi45NCIgeT0iNi4yMSIgd2lkdGg9IjI0LjA4IiBoZWlnaHQ9IjUwMy4wNCIvPgogIDxnPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEzMS4wNiw0MzUuMjV2NzMuMjNoLTEuNjZjLS4zMi0yLjM0LTEuNjYtNC41MS00LjE1LTUuOTItNC4xNS0yLjM0LTguNTktMi4xNy0xMS43NS0yLjE3SDMwLjYzYy03LjI4LDAtMTIuOTEuMTYtMTguMiwxLjcxLTQuMTIsMS4wOC02Ljk1LDQuNjUtNi42MSw3LjE1aC0xLjgxdi03NC4xNWgyMi4zM3YxLjcxYy00LjY0LDEuNzEtNy4xMyw3LjE1LTcuMjgsMTMuNTYtLjE3LDUuNDUsMCwxMC43NiwwLDE3LjYxdjE0LjAzaDM2LjU2di0yMy4zNmMwLTUuMTQsMC04LjcyLTIuNjYtMTMuMDktMS42Ni0yLjgxLTMuOTctNC44Mi03LjQ1LTUuNzV2LTEuNTdoMzQuMjV2MS41N2MtMy4xNS4xNi02LjYxLDQuMDUtNy42LDcuNDgtMS4xNyw0LjIxLTEuNDksNy43OS0xLjQ5LDEyLjc3djIxLjgybDM0LjA3LS4xNmM0Ljc5LDAsNy43Ny0xLjEsOC41OS0xLjcxLDIuMTYtMS44NywyLjgxLTUuOTIsMi44MS05Ljgydi0xNC44YzAtNi4wOC0uNjctMTAuNTktMy4xNS0xNS43NC0xLjMyLTIuOTctNi4yOC01LjYxLTcuNDUtNS42MXYtMi4wM2wyNS41MywzLjI1aDBaIi8+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEyLjEsMzE1LjI5YzUuOTYsMS43MSwxMi4wNywxLjI0LDE1Ljg5LDEuMjRoNTYuOTJjMzcuMjMsMCw0OC4zLDIwLjI1LDQ5LjE1LDQ1LjQ4LjY3LDI1LjU2LTExLjkyLDQ3Ljk4LTQ4LjMsNDcuOThsLTU2LjkyLS4xNmMtNS40NiwwLTEwLjU4LjQ3LTE3LjA0LDIuNjQtMy42NSwxLjI0LTUuNjEsNC4zNS01Ljk2LDcuNDhsLTEuODEuMTZ2LTM4LjAyaDEuODFjLjY3LDQuMDUsMS44MSw2LjM4LDUuOTYsNy43OSw1Ljk2LDEuODcsOS45MywxLjU3LDE2LjIyLDEuNTdoNTguMDljMjIuMTgsMCwzMi45My0xMi45MywzMi4yNi0yOS4yNy0uNjctMTYuMi03LjQ1LTI3LjI2LTMzLjU3LTI3LjI2bC01NS45My4xNmMtNS40NiwwLTExLjA4LS4xNi0xNy4zOCwyLjE3LTMuNjUsMS4yNC01LjI5LDMuOS01LjYxLDcuMThoLTEuODF2LTM2LjQ1aDEuODFjLjYsMy45LDIuMDksNi4wOCw2LjIzLDcuMzJoMFoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTM0LjIxLDI2OC41NWMwLDEwLjEyLTEuODEsMTcuMy01LjY0LDI2LjYzbC0yMywxLjcxdi0xLjU3bDEuNjYtMS40YzcuNzctNi41NSwxMS43NS0xNy43NywxMC45My0yNi4zMy0xLjMyLTEzLjctOS41OS0yMC4wOS0yMS4zMy0yMS4wMi0xMi43NC0uNzctMTcuODgsNy45NS0yNS4xNiwyMC4wOWwtNC45Nyw4LjI1Yy03LjQ1LDEyLjc3LTE3LjcxLDIxLjM1LTMzLjI1LDIwLjg4LTE5LjItLjQ3LTMyLjQzLTE1LjI3LTMzLjQzLTM0LjkxLS41LTExLjUzLDQuNDctMTkuMTUsNC40Ny0yMi43NSwwLTEuNzEtLjUtMi4xNy0xLjE3LTIuOTd2LTIuMzRoMjMuMTd2Mi4wM2MtNy42Miw0Ljk4LTEwLjkzLDEzLjA5LTExLjA4LDI0LjQ2LS4xNywxMC45LDguMTIsMTkuMDEsMTguNTMsMTkuMDFzMTYuMzktMTIuNjMsMTguODUtMTYuODFsNS4yOS05LjQ3YzkuNTktMTYuODEsMjEuMDEtMjQuNjIsMzguMDUtMjQuNDYsMjguMTQuMzMsMzguMDcsMjIuNDUsMzguMDcsNDAuOTdoMFoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjcuMzMsMTM2LjYyYy0yLjQ4LDEuNTctMi44MSwyLjE3LTQuOTcsNC45OC00LjE1LDUuMzEtMy4zLDE0LjMzLTMuMywyMC4yNXY1LjYxaDkwLjQ5YzMuOTcsMCwxMC40My0xLjI0LDE0LjktMy41OCwyLjk4LTEuNTcsNC42Mi00LjA1LDQuOTctNi44NWgxLjY2djM3LjIyaC0xLjY2Yy0uMzItMi4zNC0xLjQ5LTQuMDUtMy42NS01LjMxLTQuNzktMi44MS05LjU5LTMuMTEtMTUuNzItMy4xMUgxOS4zOHY1LjMxYzAsNi43MS0uMzIsMTIsMS4zMiwxNy42MS45OSwzLjU4LDMuMTUsNC45OCw2LjYzLDcuMDF2Mi4xN2wtMjMuMzItMS43MXYtNzguOTlsMjMuMzItMi41djEuODdoMFoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTMxLjA2LDEyMy42NmgtMS40OWMtLjMyLTIuNS0xLjk5LTQuODQtNC43OS02LjA4LTUuMjktMi4zNC0xNC41NS0yLjAzLTIzLjY3LTIuMDNIMjguNjRjLTUuNDYsMC0xMC43NSwwLTE3LjA0LDIuMzQtMy42NSwxLjI0LTUuNDYsNC4wNS01Ljc5LDcuMzJoLTEuODF2LTM4LjE2aDEuODFjLjY3LDQuMDUsMS4xNyw2LjU1LDUuNDYsNy43OSw1Ljk2LDEuODcsMTAuMDgsMS44NywxNi41NCwxLjg3aDczLjYzYzcuMSwwLDE3LjIxLS4xNiwyMy40OS0zLjQ0LDMuNDgtMS44NywzLjgtNC45OCw0LjQ3LTYuNTVoMS42NmwtLjAyLDM2Ljk0aDBaIi8+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEzNC4yMSw0Ny4xOGMwLDEwLjEyLTEuODEsMTcuMjgtNS42NCwyNi42M2wtMjMsMS43MXYtMS41N2wxLjY2LTEuNGM3Ljc3LTYuNTUsMTEuNzUtMTcuNzUsMTAuOTMtMjYuMzMtMS4zMi0xMy43LTkuNTktMjAuMDktMjEuMzMtMjEuMDItMTIuNzQtLjc3LTE3Ljg4LDcuOTUtMjUuMTYsMjAuMDlsLTQuOTcsOC4yNWMtNy40NSwxMi43Ny0xNy43MSwyMS4zNS0zMy4yNSwyMC44OEMxNC4yNiw3My45NSwxLjAzLDU5LjE1LjAzLDM5LjUzYy0uNS0xMS41Myw0LjQ3LTE5LjE1LDQuNDctMjIuNzUsMC0xLjcxLS41LTIuMTctMS4xNy0yLjk3di0yLjM0aDIzLjE3djIuMDNjLTcuNjIsNC45OC0xMC45MywxMy4wOS0xMS4wOCwyNC40Ni0uMTcsMTAuOSw4LjEyLDE5LjAxLDE4LjUzLDE5LjAxczE2LjM5LTEyLjYzLDE4Ljg1LTE2LjgxbDUuMjktOS40OWM5LjU5LTE2LjgxLDIxLjAxLTI0LjYyLDM4LjA1LTI0LjQ2LDI4LjE0LjMzLDM4LjA3LDIyLjQ1LDM4LjA3LDQwLjk3aDBaIi8+CiAgICA8L2c+CiAgICA8cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE0NC4xMyIgeT0iMzIxLjU0IiB3aWR0aD0iOC40NSIgaGVpZ2h0PSI4NSIvPgogIDwvZz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxMC43OCwyMzcuMjhsMS4zMS0xNjMuNTJoLS45OGwtNjAuMDUsMTYzLjUyaC0zOS4xN2wtNTguNDItMTYzLjUyaC0uOThsMS4zMSwxNjMuNTJoLTUyLjU1VjYuMmg3OS40MWw1Mi42MSwxNDguMThoMS4zMUw0ODQuOSw2LjJoODAuNzJ2MjMxLjA4aC01NC44M1oiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg0OS42NiwxMjAuNzZjMCwxOC4yOC0zLjE2LDM0Ljk4LTkuNDYsNTAuMS02LjMxLDE1LjEzLTE1LjA3LDI4LjA3LTI2LjI3LDM4Ljg0LTExLjIxLDEwLjc3LTI0LjUzLDE5LjA5LTM5Ljk4LDI0Ljk3LTE1LjQ1LDUuODctMzIuMiw4LjgxLTUwLjI2LDguODFzLTM0Ljc2LTIuOTQtNTAuMS04LjgxYy0xNS4zNC01Ljg3LTI4LjYxLTE0LjItMzkuODItMjQuOTctMTEuMjEtMTAuNzctMTkuOTctMjMuNzEtMjYuMjctMzguODQtNi4zMS0xNS4xMi05LjQ2LTMxLjgyLTkuNDYtNTAuMXMzLjE1LTM1LjE5LDkuNDYtNTAuMWM2LjMxLTE0LjksMTUuMDYtMjcuNTgsMjYuMjctMzguMDIsMTEuMi0xMC40NCwyNC40OC0xOC40OSwzOS44Mi0yNC4xNSwxNS4zNC01LjY2LDMyLjA0LTguNDksNTAuMS04LjQ5czM0LjgxLDIuODMsNTAuMjYsOC40OWMxNS40NSw1LjY2LDI4Ljc3LDEzLjcxLDM5Ljk4LDI0LjE1LDExLjIsMTAuNDQsMTkuOTYsMjMuMTIsMjYuMjcsMzguMDIsNi4zMSwxNC45MSw5LjQ2LDMxLjYxLDkuNDYsNTAuMVpNNzg5LjkzLDEyMC43NmMwLTEwLjAxLTEuNjMtMTkuMzYtNC45LTI4LjA3LTMuMjYtOC43LTcuNzgtMTYuMTYtMTMuNTQtMjIuMzYtNS43Ny02LjItMTIuNzMtMTEuMS0yMC44OS0xNC42OS04LjE2LTMuNTktMTcuMTMtNS4zOS0yNi45My01LjM5cy0xOC43MiwxLjgtMjYuNzYsNS4zOWMtOC4wNSwzLjU5LTE1LjAxLDguNDktMjAuODksMTQuNjktNS44Nyw2LjItMTAuMzksMTMuNjYtMTMuNTQsMjIuMzYtMy4xNiw4LjctNC43MywxOC4wNi00LjczLDI4LjA3czEuNjMsMjAuMDcsNC45LDI4Ljg4YzMuMjYsOC44MSw3Ljc4LDE2LjM3LDEzLjU0LDIyLjY4LDUuNzYsNi4zMSwxMi42NywxMS4yNiwyMC43MywxNC44NSw4LjA1LDMuNTksMTYuOTcsNS4zOSwyNi43Niw1LjM5czE4LjcxLTEuOCwyNi43Ni01LjM5YzguMDUtMy41OSwxNS4wMS04LjU0LDIwLjg5LTE0Ljg1LDUuODctNi4zMSwxMC40NC0xMy44NywxMy43MS0yMi42OCwzLjI2LTguODEsNC45LTE4LjQ0LDQuOS0yOC44OFoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwMDUuMzcsMjM3LjI4bC01MC4xNy05MS43MWgtMTkuMDJ2OTEuNzFoLTU0LjUxVjYuMmg4OC4xMmMxMS4xLDAsMjEuOTIsMS4xNCwzMi40NywzLjQzLDEwLjU1LDIuMjgsMjAuMDIsNi4xNSwyOC40LDExLjU5LDguMzcsNS40NCwxNS4wNiwxMi42MiwyMC4wNywyMS41NCw1LDguOTIsNy41MSwyMC4wMiw3LjUxLDMzLjI5LDAsMTUuNjctNC4yNCwyOC44My0xMi43MywzOS40OS04LjQ5LDEwLjY2LTIwLjI0LDE4LjI4LTM1LjI1LDIyLjg1bDYwLjM4LDk4Ljg5aC02NS4yOFpNMTAwMy4wOSw3Ny4wM2MwLTUuNDQtMS4xNS05Ljg0LTMuNDUtMTMuMjItMi4yOS0zLjM3LTUuMjUtNS45OC04Ljg1LTcuODMtMy42MS0xLjg1LTcuNjUtMy4xLTEyLjE0LTMuNzUtNC40OC0uNjUtOC44LS45OC0xMi45NS0uOThoLTI5Ljg0djUzLjg1aDI2LjU2YzQuNTksMCw5LjI5LS4zOCwxNC4xMS0xLjE0LDQuODEtLjc2LDkuMTgtMi4xMiwxMy4xMi00LjA4LDMuOTQtMS45Niw3LjE2LTQuNzgsOS42Ny04LjQ5LDIuNTEtMy43LDMuNzctOC40OSwzLjc3LTE0LjM2WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTE5NC43NCw1My44NXYxODMuNDJoLTU1LjgxVjUzLjg1aC02NS4yOFY2LjJoMTg2LjM2djQ3LjY1aC02NS4yOFoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0NDYuNDQsMjM3LjZjLTE1LjEzLDMuNy0zMS42MSw1LjU1LTQ5LjQ1LDUuNTVzLTM1LjUyLTIuOTQtNTEuMDgtOC44MWMtMTUuNTYtNS44Ny0yOC45NC0xNC4xNC00MC4xNC0yNC44LTExLjIxLTEwLjY2LTE5Ljk3LTIzLjQ0LTI2LjI3LTM4LjM1LTYuMzEtMTQuOS05LjQ2LTMxLjUtOS40Ni00OS43N3MzLjIxLTM1LjI1LDkuNjMtNTAuMjZjNi40Mi0xNS4wMSwxNS4yOC0yNy43OSwyNi42LTM4LjM1LDExLjMxLTEwLjU1LDI0LjU5LTE4LjY1LDM5LjgyLTI0LjMyLDE1LjIzLTUuNjYsMzEuNjYtOC40OSw0OS4yOC04LjQ5czM1LjI1LDIuNzcsNTAuOTIsOC4zMmMxNS42Nyw1LjU1LDI4LjM5LDEzLDM4LjE5LDIyLjM2bC0zNS4yNSw0MC4xNGMtNS40NC02LjMxLTEyLjYyLTExLjQ3LTIxLjU0LTE1LjUtOC45Mi00LjAyLTE5LjA0LTYuMDQtMzAuMzUtNi4wNC05Ljc5LDAtMTguODIsMS44LTI3LjA5LDUuMzktOC4yNywzLjU5LTE1LjQ1LDguNi0yMS41NCwxNS4wMS02LjA5LDYuNDItMTAuODMsMTQuMDMtMTQuMiwyMi44NS0zLjM4LDguODEtNS4wNiwxOC40NC01LjA2LDI4Ljg4czEuNTIsMjAuNDUsNC41NywyOS4zN2MzLjA0LDguOTIsNy41NiwxNi41OSwxMy41NCwyMy4wMSw1Ljk4LDYuNDIsMTMuMzgsMTEuNDIsMjIuMTksMTUuMDEsOC44MSwzLjU5LDE4Ljg3LDUuMzksMzAuMTksNS4zOSw2LjUzLDAsMTIuNzMtLjQ5LDE4LjYtMS40Nyw1Ljg3LS45OCwxMS4zMS0yLjU1LDE2LjMyLTQuNzN2LTQyLjFoLTQ0LjA2di00NS4wNGg5NS4zdjEyMi4zOWMtMTEuMzIsNS44Ny0yNC41MywxMC42Ni0zOS42NiwxNC4zNloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE2ODUuMTYsMjM3LjI4bC0xNy45NS00NS4zN2gtODkuNDNsLTE2Ljk3LDQ1LjM3aC02MC43MUwxNTk3LjAzLDYuMmg1NC4xOGw5NS45NiwyMzEuMDhoLTYyLjAxWk0xNjIzLjE0LDY3Ljg5bC0yOS4zNyw3OS4zMWg1OC4xbC0yOC43Mi03OS4zMVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE5MTcuMjcsMjM3LjZjLTE1LjEzLDMuNy0zMS42MSw1LjU1LTQ5LjQ1LDUuNTVzLTM1LjUyLTIuOTQtNTEuMDgtOC44MWMtMTUuNTYtNS44Ny0yOC45NC0xNC4xNC00MC4xNC0yNC44LTExLjIxLTEwLjY2LTE5Ljk3LTIzLjQ0LTI2LjI3LTM4LjM1LTYuMzEtMTQuOS05LjQ2LTMxLjUtOS40Ni00OS43N3MzLjIxLTM1LjI1LDkuNjMtNTAuMjZjNi40Mi0xNS4wMSwxNS4yOC0yNy43OSwyNi42LTM4LjM1LDExLjMxLTEwLjU1LDI0LjU5LTE4LjY1LDM5LjgyLTI0LjMyLDE1LjIzLTUuNjYsMzEuNjYtOC40OSw0OS4yOC04LjQ5czM1LjI1LDIuNzcsNTAuOTIsOC4zMiwyOC4zOSwxMywzOC4xOSwyMi4zNmwtMzUuMjUsNDAuMTRjLTUuNDQtNi4zMS0xMi42Mi0xMS40Ny0yMS41NC0xNS41LTguOTItNC4wMi0xOS4wNC02LjA0LTMwLjM1LTYuMDQtOS43OSwwLTE4LjgyLDEuOC0yNy4wOSw1LjM5LTguMjcsMy41OS0xNS40NSw4LjYtMjEuNTQsMTUuMDEtNi4wOSw2LjQyLTEwLjgzLDE0LjAzLTE0LjIsMjIuODUtMy4zOCw4LjgxLTUuMDYsMTguNDQtNS4wNiwyOC44OHMxLjUyLDIwLjQ1LDQuNTcsMjkuMzdjMy4wNCw4LjkyLDcuNTYsMTYuNTksMTMuNTQsMjMuMDEsNS45OCw2LjQyLDEzLjM4LDExLjQyLDIyLjE5LDE1LjAxLDguODEsMy41OSwxOC44Nyw1LjM5LDMwLjE5LDUuMzksNi41MywwLDEyLjczLS40OSwxOC42LTEuNDcsNS44Ny0uOTgsMTEuMzEtMi41NSwxNi4zMi00Ljczdi00Mi4xaC00NC4wNnYtNDUuMDRoOTUuM3YxMjIuMzljLTExLjMyLDUuODctMjQuNTMsMTAuNjYtMzkuNjYsMTQuMzZaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xOTk4Ljc3LDIzNy4yOFY2LjJoMTU1LjM2djQ3aC0xMDEuNXY0My43M2g5NS45NnY0NC43MWgtOTUuOTZ2NDcuOThoMTA3LjM4djQ3LjY1aC0xNjEuMjNaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00ODQuMDIsNTA5LjI2bC0xNy45NS00NS4zN2gtODkuNDNsLTE2Ljk3LDQ1LjM3aC02MC43MWw5Ni45My0yMzEuMDhoNTQuMThsOTUuOTYsMjMxLjA4aC02Mi4wMVpNNDIyLjAxLDMzOS44N2wtMjkuMzcsNzkuMzFoNTguMWwtMjguNzItNzkuMzFaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NjMuMDcsNTA5LjI2di0yMzEuMDhoNTYuMTR2MTgyLjQ1aDg5LjQzdjQ4LjYzaC0xNDUuNTdaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03MjkuODQsNTA5LjI2di0yMzEuMDhoNTYuMTR2MTgyLjQ1aDg5LjQzdjQ4LjYzaC0xNDUuNTdaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04OTUuNjcsNTA5LjI2di0yMzEuMDhoNTYuMTR2MjMxLjA4aC01Ni4xNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExNTMuODYsNTA5LjI2bC0xNy45NS00NS4zN2gtODkuNDNsLTE2Ljk3LDQ1LjM3aC02MC43MWw5Ni45My0yMzEuMDhoNTQuMThsOTUuOTYsMjMxLjA4aC02Mi4wMVpNMTA5MS44NSwzMzkuODdsLTI5LjM3LDc5LjMxaDU4LjFsLTI4LjcyLTc5LjMxWiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTM3OS43OCw1MDkuMjZsLTkzLjAyLTE1MS4xMWgtLjk4bDEuMzEsMTUxLjExaC01NC4xOHYtMjMxLjA4aDYzLjY0bDkyLjY5LDE1MC43OWguOThsLTEuMzEtMTUwLjc5aDU0LjE4djIzMS4wOGgtNjMuMzJaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjQzLjAxLDUwNS4xOGMtMTUuMDEsNi44NS0zMi4zMSwxMC4yOC01MS44OSwxMC4yOC0xNy44NCwwLTM0LjMzLTIuOTQtNDkuNDUtOC44MS0xNS4xMy01Ljg3LTI4LjIzLTE0LjItMzkuMzMtMjQuOTctMTEuMS0xMC43Ny0xOS44LTIzLjY2LTI2LjExLTM4LjY4LTYuMzEtMTUuMDEtOS40Ni0zMS41NS05LjQ2LTQ5LjYxczMuMjEtMzUuMjUsOS42My01MC4yNmM2LjQyLTE1LjAxLDE1LjI4LTI3Ljc5LDI2LjYtMzguMzUsMTEuMzEtMTAuNTUsMjQuNTktMTguNjUsMzkuODItMjQuMzIsMTUuMjMtNS42NiwzMS42Ni04LjQ5LDQ5LjI4LTguNDksMTYuMzIsMCwzMi4zNiwyLjg5LDQ4LjE0LDguNjUsMTUuNzcsNS43NywyOC41NiwxNC4yLDM4LjM1LDI1LjI5bC0zNy44NiwzNy44NmMtNS4yMi03LjE4LTEyLjA4LTEyLjUxLTIwLjU2LTE1Ljk5LTguNDktMy40OC0xNy4xOS01LjIyLTI2LjExLTUuMjItOS43OSwwLTE4Ljc3LDEuOC0yNi45Myw1LjM5LTguMTYsMy41OS0xNS4xOCw4LjU0LTIxLjA1LDE0Ljg1LTUuODcsNi4zMS0xMC40NCwxMy43Ni0xMy43MSwyMi4zNi0zLjI2LDguNi00LjksMTguMDEtNC45LDI4LjIzczEuNjMsMjAuMDIsNC45LDI4LjcyYzMuMjYsOC43LDcuNzgsMTYuMTYsMTMuNTQsMjIuMzYsNS43Niw2LjIsMTIuNjcsMTEuMDUsMjAuNzIsMTQuNTIsOC4wNSwzLjQ4LDE2Ljg2LDUuMjIsMjYuNDQsNS4yMiwxMS4xLDAsMjAuNzgtMi4xNywyOS4wNS02LjUzLDguMjctNC4zNSwxNC45LTEwLjAxLDE5LjkxLTE2Ljk3bDM4Ljg0LDM2LjU1Yy0xMC4yMywxMS43NS0yMi44NSwyMS4wNS0zNy44NiwyNy45MVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3MDAuMTMsNTA5LjI2di0yMzEuMDhoMTU1LjM2djQ3aC0xMDEuNXY0My43M2g5NS45NnY0NC43MWgtOTUuOTZ2NDcuOThoMTA3LjM4djQ3LjY1aC0xNjEuMjNaIi8+CiAgPC9nPgo8L3N2Zz4=" style="height:38px;width:auto;" alt="Eustis Mortgage Alliance">
+  </a>
+  <div class="nav-links">
+    <a href="https://eustisalliance.com/about-us/">About</a>
+    <a href="https://eustisalliance.com/all-solution/">Solutions</a>
+    <a href="https://eustisalliance.com/partners/">For Partners</a>
+    <a href="#" class="cur">Products</a>
+    <a href="https://eustisalliance.com/resources/">Resources</a>
+    <a href="https://origination.mortgage.meridianlink.com/simple_login.aspx?lenderpmlsiteid=f2bd32a8-4770-4d81-9fca-2161dce3c0c0" class="nav-btn">Log In</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1 style="color:#ffffff;font-family:'Avenir Next Condensed','Avenir',Arial,sans-serif;font-weight:400;">Loan <span style="color:#ffffff;">Products</span></h1>
+      
+    </div>
+    </div>
+</div>
+
+<div class="layout">
+<nav class="sidebar">
+  <div class="cat-lbl">Government</div>
+  <button class="nav-item active" onclick="showPanel('fha',this)">FHA</button>
+  <button class="nav-item sub" onclick="showPanel('fha',this,'fha-fixed')">&#8250; FHA Fixed</button>
+  <button class="nav-item sub" onclick="showPanel('fha',this,'fha-100')">&#8250; FHA 100</button>
+  <button class="nav-item sub" onclick="showPanel('fha',this,'fha-streamline')">&#8250; FHA Streamline</button>
+  <button class="nav-item sub" onclick="showPanel('fha',this,'fha-203k')">&#8250; FHA 203k</button>
+  <button class="nav-item sub" onclick="showPanel('fha',this,'fha-203h')">&#8250; FHA 203h</button>
+  <button class="nav-item" onclick="showPanel('va',this)">VA</button>
+  <button class="nav-item sub" onclick="showPanel('va',this,'va-fixed')">&#8250; VA Fixed</button>
+  <button class="nav-item sub" onclick="showPanel('va',this,'va-jumbo')">&#8250; VA Jumbo</button>
+  <button class="nav-item sub" onclick="showPanel('va',this,'va-irrrl')">&#8250; VA IRRRL</button>
+  <button class="nav-item sub" onclick="showPanel('va',this,'va-reno')">&#8250; VA Renovation</button>
+  <button class="nav-item sub" onclick="showPanel('va',this,'va-cashout')">&#8250; VA 100% Cash Out</button>
+  <button class="nav-item" onclick="showPanel('usda',this)">USDA</button>
+  <button class="nav-item sub" onclick="showPanel('usda',this,'usda-fixed')">&#8250; USDA Fixed</button>
+  <button class="nav-item sub" onclick="showPanel('usda',this,'usda-reno')">&#8250; USDA Renovations</button>
+  <button class="nav-item sub" onclick="showPanel('usda',this,'usda-streamline')">&#8250; USDA Streamline Refi</button>
+  <div class="sdiv"></div>
+  <div class="cat-lbl">Conventional</div>
+  <button class="nav-item" onclick="showPanel('conv',this)">Conventional</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-fixed')">&#8250; Conventional Fixed</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-homeready')">&#8250; HomeReady</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-homepossible')">&#8250; HomePossible</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-homeone')">&#8250; HomeOne</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-fnma97')">&#8250; FNMA 97</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-homestyle')">&#8250; HomeStyle Renovation</button>
+  <button class="nav-item sub" onclick="showPanel('conv',this,'conv-choice')">&#8250; Choice Renovation</button>
+  <button class="nav-item" onclick="showPanel('hfa',this)">HFA / Bond Products</button>
+  <button class="nav-item sub" onclick="showPanel('hfa',this,'hfa-cafa')">&#8250; CAFA Eustis Edge</button>
+  <button class="nav-item sub" onclick="showPanel('hfa',this,'hfa-essex')">&#8250; Essex Mortgage</button>
+  <button class="nav-item sub" onclick="showPanel('hfa',this,'hfa-chenoa')">&#8250; Chenoa Fund</button>
+  <button class="nav-item sub" onclick="showPanel('hfa',this,'hfa-clickclose')">&#8250; Click n' Close</button>
+  <div class="sdiv"></div>
+  <div class="cat-lbl">Specialty / Non-QM</div>
+  <button class="nav-item" onclick="showPanel('condotel',this)">Condotel</button>
+  <button class="nav-item" onclick="showPanel('itin',this)">ITIN</button>
+  <button class="nav-item" onclick="showPanel('foreign',this)">Foreign National</button>
+  <button class="nav-item" onclick="showPanel('dscr',this)">DSCR</button>
+  <button class="nav-item" onclick="showPanel('manufactured',this)">Manufactured Housing</button>
+  <button class="nav-item" onclick="showPanel('nonconf',this)">Non-Conforming Jumbo</button>
+  <button class="nav-item" onclick="showPanel('bankstmt',this)">Bank Statements</button>
+  <button class="nav-item" onclick="showPanel('assetdep',this)">Asset Depletion</button>
+  <button class="nav-item" onclick="showPanel('nonwcondo',this)">Non-Warrantable Condo</button>
+</nav>
+<div class="content">
+
+<!-- FHA -->
+<div id="panel-fha" class="panel active">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6M12 9v6"/></svg></div><div class="prod-name">FHA</div></div>
+  <div class="prod-tag">Government</div>
+  <p class="prod-desc">Government-backed mortgage designed to help borrowers with lower credit scores or smaller down payments buy a home.</p>
+  <div class="highlights">
+    <div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3.5%</div></div>
+    <div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">580</div></div>
+    
+    <div class="hl"><div class="hl-lbl">MIP Required</div><div class="hl-val">Yes</div></div>
+  </div>
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSub(this,'fha','fha-fixed')">FHA Fixed</button>
+    <button class="subtab" onclick="showSub(this,'fha','fha-100')">FHA 100</button>
+    <button class="subtab" onclick="showSub(this,'fha','fha-streamline')">FHA Streamline</button>
+    <button class="subtab" onclick="showSub(this,'fha','fha-203k')">FHA 203k</button>
+    <button class="subtab" onclick="showSub(this,'fha','fha-203h')">FHA 203h</button>
+  </div>
+  <div id="fha-fixed" class="subpanel active">
+    <div class="sections">
+      <div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+        <a href="https://portal.hud.gov/hudportal/HUD" class="sec-link" target="_blank">HUD Portal</a>
+        <span class="sec-link">Citizenship &amp; Immigration Requirements</span>
+        <span class="sec-link">DPA Compare Document</span>
+        <span class="sec-link">FHA DPA Training Deck</span>
+        <span class="sec-link">Insurance Coverage &amp; Deductible Requirements</span>
+        <span class="sec-link">Student Loan Payment Comparison</span>
+        <span class="sec-link">Temporary Buydowns &ndash; How to Guide</span>
+      </div></div>
+      <div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+        <span class="sec-link">FHA Loan Submission Form</span>
+      </div></div>
+      <div class="sec full"><div class="sec-h">Recent Announcements</div><div class="sec-b">
+        <div class="ann"><span class="ann-t">2026 FHA Loan Limits</span><span class="ann-d">Dec 16, 2025</span></div>
+        <div class="ann"><span class="ann-t">Citizenship and Immigration Requirements</span><span class="ann-d">Apr 18, 2025</span></div>
+        <div class="ann"><span class="ann-t">FHA Changes &ndash; Mortgagee Letter 2025-09</span><span class="ann-d">Apr 2, 2025</span></div>
+        <div class="ann"><span class="ann-t">FHA Loans Down to a 580</span><span class="ann-d">Sep 16, 2024</span></div>
+        <div class="ann"><span class="ann-t">FHA Guideline Updates</span><span class="ann-d">Jun 3, 2024</span></div>
+      </div></div>
+    </div>
+  </div>
+  <div id="fha-100" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">0%</div></div><div class="hl"><div class="hl-lbl">Program</div><div class="hl-val">DPA Assistance</div></div><div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">580</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">DPA Compare Document</span>
+      <span class="sec-link">FHA DPA Training Deck</span>
+      <span class="sec-link">DPA Product &amp; Underwriting Guidelines</span>
+    </div></div><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">FHA Loan Submission Form</span>
+    </div></div></div>
+  </div>
+  <div id="fha-streamline" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Appraisal</div><div class="hl-val">Not Required</div></div><div class="hl"><div class="hl-lbl">Income Docs</div><div class="hl-val">Streamlined</div></div><div class="hl"><div class="hl-lbl">Existing FHA</div><div class="hl-val">Required</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">FHA Streamline Loan Submission Form</span>
+    </div></div><div class="sec"><div class="sec-h">Announcements</div><div class="sec-b">
+      <div class="ann"><span class="ann-t">Streamline Refinance Options for FHA &amp; USDA</span><span class="ann-d">Sep 24, 2024</span></div>
+    </div></div></div>
+  </div>
+  <div id="fha-203k" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Purchase + Reno</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3.5%</div></div><div class="hl"><div class="hl-lbl">Reno Funds</div><div class="hl-val">Included in Loan</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <a href="https://portal.hud.gov/hudportal/HUD" class="sec-link" target="_blank">HUD Portal &ndash; 203k Info</a>
+      <span class="sec-link">Insurance Coverage &amp; Deductible Requirements</span>
+    </div></div></div>
+  </div>
+  <div id="fha-203h" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Disaster Relief</div></div><div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 Required</div></div><div class="hl"><div class="hl-lbl">Eligibility</div><div class="hl-val">Declared Disaster Area</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">FHA 203(h) Disaster Relief Loan Info</span>
+      <a href="https://portal.hud.gov/hudportal/HUD" class="sec-link" target="_blank">HUD Portal</a>
+    </div></div></div>
+  </div>
+</div>
+
+<!-- VA -->
+<div id="panel-va" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="prod-name">VA</div></div>
+  <div class="prod-tag">Government</div>
+  <p class="prod-desc">Offers eligible veterans and service members low- or no-down-payment home financing.</p>
+  <div class="highlights">
+    <div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 Required</div></div>
+    <div class="hl"><div class="hl-lbl">PMI</div><div class="hl-val">None</div></div>
+    <div class="hl"><div class="hl-lbl">Funding Fee</div><div class="hl-val">1.25&ndash;3.3%</div></div>
+    <div class="hl"><div class="hl-lbl">Eligibility</div><div class="hl-val">Veterans / Active Duty</div></div>
+  </div>
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSub(this,'va','va-fixed')">VA Fixed</button>
+    <button class="subtab" onclick="showSub(this,'va','va-jumbo')">VA Jumbo</button>
+    <button class="subtab" onclick="showSub(this,'va','va-irrrl')">VA IRRRL</button>
+    <button class="subtab" onclick="showSub(this,'va','va-reno')">VA Renovation</button>
+    <button class="subtab" onclick="showSub(this,'va','va-cashout')">VA 100% Cash Out</button>
+  </div>
+  <div id="va-fixed" class="subpanel active">
+    <div class="sections">
+      <div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+        <a href="https://www.benefits.va.gov/homeloans/" class="sec-link" target="_blank">US Dept. of Veterans Affairs &ndash; Home Loans</a>
+        <span class="sec-link">Insurance Coverage &amp; Deductible Requirements</span>
+        <span class="sec-link">Temporary Buydowns &ndash; How to Guide</span>
+        <span class="sec-link">VA High Balance</span>
+      </div></div>
+      <div class="sec"><div class="sec-h">VA Document Pack</div><div class="sec-b">
+        <span class="sec-link">VA Amendment to Contract Form</span>
+        <span class="sec-link">VA Counseling Checklist #26-0592</span>
+        <span class="sec-link">VA Nearest Living Relative Form</span>
+        <span class="sec-link">VA Request for COE &ndash; Form 26-1880</span>
+        <span class="sec-link">Veterans Questionnaire</span>
+      </div></div>
+      <div class="sec full"><div class="sec-h">Recent Announcements</div><div class="sec-b">
+        <div class="ann"><span class="ann-t">VA Annual Renewal and Validation Process</span><span class="ann-d">Aug 12, 2025</span></div>
+        <div class="ann"><span class="ann-t">VA Annual Renewal and Validation Process</span><span class="ann-d">Apr 23, 2025</span></div>
+        <div class="ann"><span class="ann-t">New Product Announcement &ndash; VA Cash Out</span><span class="ann-d">Apr 25, 2024</span></div>
+        <div class="ann"><span class="ann-t">Buydown Options</span><span class="ann-d">Oct 31, 2023</span></div>
+      </div></div>
+    </div>
+  </div>
+  <div id="va-jumbo" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Loan Amount</div><div class="hl-val">High Balance</div></div><div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 (full entitlement)</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">VA High Balance Guidelines</span>
+      <a href="https://www.benefits.va.gov/homeloans/" class="sec-link" target="_blank">VA Benefits Portal</a>
+    </div></div></div>
+  </div>
+  <div id="va-irrrl" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Rate Reduction</div></div><div class="hl"><div class="hl-lbl">Appraisal</div><div class="hl-val">Not Required</div></div><div class="hl"><div class="hl-lbl">Existing VA</div><div class="hl-val">Required</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">VA IRRRL Process Guide</span>
+      <span class="sec-link">VA IRRRL Net Tangible Benefit Test</span>
+      <span class="sec-link">VA Rate Reduction Certification Form</span>
+      <a href="https://www.va.gov/vaforms/form_detail.asp?FormNo=26-8923" class="sec-link" target="_blank">VA Rate Reduction Worksheet Form #26-8923</a>
+    </div></div></div>
+  </div>
+  <div id="va-reno" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Purchase + Reno</div></div><div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 Required</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <a href="https://www.benefits.va.gov/homeloans/" class="sec-link" target="_blank">VA Benefits Portal</a>
+      <span class="sec-link">Insurance Coverage Requirements</span>
+    </div></div></div>
+  </div>
+  <div id="va-cashout" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">100%</div></div><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Cash-Out Refinance</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">VA Cash-Out Refi Comparison Certification</span>
+    </div></div><div class="sec"><div class="sec-h">Announcements</div><div class="sec-b">
+      <div class="ann"><span class="ann-t">New Product Announcement &ndash; VA Cash Out</span><span class="ann-d">Apr 25, 2024</span></div>
+    </div></div></div>
+  </div>
+</div>
+
+<!-- USDA -->
+<div id="panel-usda" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="prod-name">USDA</div></div>
+  <div class="prod-tag">Government</div>
+  <p class="prod-desc">Offers eligible rural and suburban homebuyers low- or no-down-payment financing with reduced mortgage insurance costs. Backed by the USDA Rural Development program.</p>
+  <div class="highlights">
+    <div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 Required</div></div>
+    <div class="hl"><div class="hl-lbl">Area Eligibility</div><div class="hl-val">Rural / Suburban</div></div>
+    <div class="hl"><div class="hl-lbl">Income Limits</div><div class="hl-val">Apply</div></div>
+    <div class="hl"><div class="hl-lbl">Guarantee Fee</div><div class="hl-val">1% Upfront</div></div>
+  </div>
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSub(this,'usda','usda-fixed')">USDA Fixed</button>
+    <button class="subtab" onclick="showSub(this,'usda','usda-reno')">USDA Renovations</button>
+    <button class="subtab" onclick="showSub(this,'usda','usda-streamline')">USDA Streamline Refi</button>
+  </div>
+  <div id="usda-fixed" class="subpanel active">
+    <div class="sections">
+      <div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+        <span class="sec-link">Citizenship &amp; Immigration Requirements</span>
+        <span class="sec-link">How to Set Up GUS</span>
+        <span class="sec-link">Insurance Coverage &amp; Deductible Requirements</span>
+        <span class="sec-link">USDA RD Key Things &ndash; GUS Findings</span>
+        <span class="sec-link">USDA RD Trade Line Requirements</span>
+        <span class="sec-link">USDA Refinance Options</span>
+      </div></div>
+      <div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+        <span class="sec-link">RD Form 3555-21 (updated 8/22/25)</span>
+        <span class="sec-link">USDA Loan Submission Form</span>
+      </div></div>
+      <div class="sec full"><div class="sec-h">Recent Announcements</div><div class="sec-b">
+        <div class="ann"><span class="ann-t">Updates to USDA PITI Ratio Guidelines</span><span class="ann-d">Sep 18, 2025</span></div>
+        <div class="ann"><span class="ann-t">Updated Form RD 3555-21</span><span class="ann-d">Aug 6, 2025</span></div>
+        <div class="ann"><span class="ann-t">GMFS Ranked #1 USDA Lender in Louisiana</span><span class="ann-d">Jun 30, 2025</span></div>
+        <div class="ann"><span class="ann-t">USDA RD Income Limits 2024</span><span class="ann-d">Jul 12, 2024</span></div>
+      </div></div>
+    </div>
+  </div>
+  <div id="usda-reno" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Purchase + Reno</div></div><div class="hl"><div class="hl-lbl">Down Payment</div><div class="hl-val">$0 Required</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+      <span class="sec-link">USDA RD Key Things &ndash; GUS Findings</span>
+    </div></div></div>
+  </div>
+  <div id="usda-streamline" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Appraisal</div><div class="hl-val">Not Required</div></div><div class="hl"><div class="hl-lbl">Existing USDA</div><div class="hl-val">Required</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">USDA Streamline Assist Loan Submission Form</span>
+    </div></div><div class="sec"><div class="sec-h">Announcements</div><div class="sec-b">
+      <div class="ann"><span class="ann-t">Streamline Refinance Options for FHA &amp; USDA</span><span class="ann-d">Sep 24, 2024</span></div>
+    </div></div></div>
+  </div>
+</div>
+
+<!-- CONVENTIONAL -->
+<div id="panel-conv" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="prod-name">Conventional</div></div>
+  <div class="prod-tag">Conforming</div>
+  <p class="prod-desc">Standard mortgage loans conforming to Fannie Mae and Freddie Mac guidelines. Includes programs for first-time buyers, low-income borrowers, and renovation needs.</p>
+  <div class="highlights">
+    <div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3%</div></div>
+    <div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">620</div></div>
+    <div class="hl"><div class="hl-lbl">2026 Loan Limit</div><div class="hl-val">$806,500</div></div>
+    <div class="hl"><div class="hl-lbl">PMI Required</div><div class="hl-val">Below 20% LTV</div></div>
+  </div>
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSub(this,'conv','conv-fixed')">Conventional Fixed</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-homeready')">HomeReady</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-homepossible')">HomePossible</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-homeone')">HomeOne</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-fnma97')">FNMA 97</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-homestyle')">HomeStyle Renovation</button>
+    <button class="subtab" onclick="showSub(this,'conv','conv-choice')">Choice Renovation</button>
+  </div>
+  <div id="conv-fixed" class="subpanel active">
+    <div class="sections">
+      <div class="sec"><div class="sec-h">Tools &amp; Resources</div><div class="sec-b">
+        <span class="sec-link">Citizenship &amp; Immigration Requirements</span>
+        <span class="sec-link">DPA Compare Document</span>
+        <span class="sec-link">DPA Product &amp; Underwriting Guidelines</span>
+        <span class="sec-link">How to Order Conventional Appraisals</span>
+        <span class="sec-link">Insurance Coverage &amp; Deductible Requirements</span>
+        <span class="sec-link">Temporary Buydowns &ndash; FAQ</span>
+        <span class="sec-link">Temporary Buydowns &ndash; How to Guide</span>
+      </div></div>
+      <div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+        <span class="sec-link">Conventional Loan Submission Form</span>
+        <span class="sec-link">Temporary Seller Paid Buydown Disclosure</span>
+      </div></div>
+      <div class="sec full"><div class="sec-h">Recent Announcements</div><div class="sec-b">
+        <div class="ann"><span class="ann-t">Value Acceptance &amp; Property Data</span><span class="ann-d">Dec 2, 2025</span></div>
+        <div class="ann"><span class="ann-t">2026 Conventional Loan Limits</span><span class="ann-d">Nov 26, 2025</span></div>
+        <div class="ann"><span class="ann-t">Citizenship and Immigration Requirements</span><span class="ann-d">Apr 18, 2025</span></div>
+        <div class="ann"><span class="ann-t">New! Low Loan Balance Price Enhancements</span><span class="ann-d">Mar 21, 2025</span></div>
+        <div class="ann"><span class="ann-t">Reconsideration of Value (ROV)</span><span class="ann-d">Oct 30, 2024</span></div>
+      </div></div>
+    </div>
+  </div>
+  <div id="conv-homeready" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3%</div></div><div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">80% AMI</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Fannie Mae</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">HomeReady Loan Submission Form</span>
+    </div></div><div class="sec"><div class="sec-h">Agency Links</div><div class="sec-b">
+      <a href="https://www.fanniemae.com" class="sec-link" target="_blank">Fannie Mae Website</a>
+    </div></div></div>
+  </div>
+  <div id="conv-homepossible" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3%</div></div><div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">80% AMI</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Freddie Mac</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">HomePossible Loan Submission Form</span>
+      <span class="sec-link">HomePossible Advantage Submission Form</span>
+    </div></div><div class="sec"><div class="sec-h">Agency Links</div><div class="sec-b">
+      <a href="http://www.freddiemac.com/" class="sec-link" target="_blank">Freddie Mac Website</a>
+    </div></div></div>
+  </div>
+  <div id="conv-homeone" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3%</div></div><div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">None</div></div><div class="hl"><div class="hl-lbl">First-Time Buyer</div><div class="hl-val">Required</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Freddie Mac</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Agency Links</div><div class="sec-b">
+      <a href="http://www.freddiemac.com/" class="sec-link" target="_blank">Freddie Mac Website</a>
+    </div></div></div>
+  </div>
+  <div id="conv-fnma97" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">3%</div></div><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">97%</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Fannie Mae</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">Conventional Loan Submission Form</span>
+    </div></div></div>
+  </div>
+  <div id="conv-homestyle" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Reno Funds</div><div class="hl-val">Up to 75% ARV</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">5%</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Fannie Mae</div></div></div>
+    <div class="sections"><div class="sec"><div class="sec-h">Forms</div><div class="sec-b">
+      <span class="sec-link">HomeStyle Renovation Loan Submission Form</span>
+    </div></div></div>
+  </div>
+  <div id="conv-choice" class="subpanel">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Program</div><div class="hl-val">Choice Renovation</div></div><div class="hl"><div class="hl-lbl">Backed By</div><div class="hl-val">Freddie Mac</div></div><div class="hl"><div class="hl-lbl">Purpose</div><div class="hl-val">Purchase + Reno</div></div></div>
+    <p class="prod-desc" style="margin-top:8px;">Freddie Mac's CHOICERenovation allows borrowers to finance the purchase or refinance of a home plus renovation costs in a single loan.</p>
+  </div>
+</div>
+
+<!-- HFA / BOND -->
+<div id="panel-hfa" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="prod-name">HFA / Bond Products</div></div>
+  <div class="prod-tag">Down Payment Assistance</div>
+  <p class="prod-desc">State and national housing finance agency programs offering below-market rates and down payment assistance for qualifying first-time and moderate-income borrowers.</p>
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSub(this,'hfa','hfa-cafa')">CAFA Eustis Edge</button>
+    <button class="subtab" onclick="showSub(this,'hfa','hfa-essex')">Essex Mortgage</button>
+    <button class="subtab" onclick="showSub(this,'hfa','hfa-chenoa')">Chenoa Fund</button>
+    <button class="subtab" onclick="showSub(this,'hfa','hfa-clickclose')">Click n' Close</button>
+  </div>
+  <div id="hfa-cafa" class="subpanel active">
+    <div class="highlights"><div class="hl"><div class="hl-lbl">Program</div><div class="hl-val">CAFA Eustis Edge</div></div><div class="hl"><div class="hl-lbl">Type</div><div class="hl-val">HFA Bond</div></div><div class="hl"><div class="hl-lbl">DPA Available</div><div class="hl-val">Yes</div></div></div>
+    <p class="prod-desc" style="margin-top:8px;">The CAFA Eustis Edge program provides competitively priced mortgage financing with down payment assistance for qualifying Louisiana borrowers through the Capital Area Finance Authority.</p>
+  </div>
+  <div id="hfa-essex" class="subpanel">
+    <div class="highlights">
+      <div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">600</div></div>
+      <div class="hl"><div class="hl-lbl">DPA Amount</div><div class="hl-val">3.5%</div></div>
+      <div class="hl"><div class="hl-lbl">Loan Types</div><div class="hl-val">FHA Only</div></div>
+      <div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">None</div></div>
+    </div>
+    <div class="sec" style="margin-top:16px;"><div class="sec-h">Program Details</div><div class="sec-b">
+      <div style="padding:4px 0;font-size:13px;color:var(--charcoal);line-height:1.7;">
+        <p style="margin-bottom:6px;"><strong>600</strong> minimum credit score</p>
+        <p style="margin-bottom:6px;">DPA: <strong>3.5%</strong> of purchase price or appraised value</p>
+        <p style="margin-bottom:6px;">Repayable and Forgivable terms available</p>
+        <p style="margin-bottom:6px;">FHA only</p>
+        <p style="margin-bottom:6px;">No first-time homebuyer requirement</p>
+        <p style="margin-bottom:6px;">Homebuyer education required</p>
+        <p style="margin-bottom:0;">No income limits</p>
+      </div>
+    </div></div>
+  </div>
+  <div id="hfa-chenoa" class="subpanel">
+    <div class="highlights">
+      <div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">600</div></div>
+      <div class="hl"><div class="hl-lbl">DPA Amount</div><div class="hl-val">3.5% or 5%</div></div>
+      <div class="hl"><div class="hl-lbl">Loan Types</div><div class="hl-val">FHA Only</div></div>
+      <div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">None</div></div>
+    </div>
+    <div class="sec" style="margin-top:16px;"><div class="sec-h">Program Details</div><div class="sec-b">
+      <div style="padding:4px 0;font-size:13px;color:var(--charcoal);line-height:1.7;">
+        <p style="margin-bottom:6px;"><strong>600</strong> minimum credit score</p>
+        <p style="margin-bottom:6px;">DPA: <strong>3.5% or 5%</strong> of purchase price or appraised value</p>
+        <p style="margin-bottom:6px;">Repayable and Forgivable terms available</p>
+        <p style="margin-bottom:6px;">FHA only</p>
+        <p style="margin-bottom:6px;">No first-time homebuyer requirement</p>
+        <p style="margin-bottom:0;">No income limits</p>
+      </div>
+    </div></div>
+  </div>
+  <div id="hfa-clickclose" class="subpanel">
+    <div class="highlights">
+      <div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">640 / 660</div></div>
+      <div class="hl"><div class="hl-lbl">DPA Amount</div><div class="hl-val">3.5% or 5%</div></div>
+      <div class="hl"><div class="hl-lbl">Loan Types</div><div class="hl-val">FHA &amp; USDA</div></div>
+      <div class="hl"><div class="hl-lbl">Income Limit</div><div class="hl-val">None</div></div>
+    </div>
+    <div class="sec" style="margin-top:16px;"><div class="sec-h">Program Details</div><div class="sec-b">
+      <div style="padding:4px 0;font-size:13px;color:var(--charcoal);line-height:1.7;">
+        <p style="margin-bottom:6px;"><strong>640</strong> credit score (forgivable DPA) &nbsp;/&nbsp; <strong>660</strong> credit score (repayable DPA)</p>
+        <p style="margin-bottom:6px;">DPA: <strong>3.5% or 5%</strong> of the purchase price or appraised value</p>
+        <p style="margin-bottom:6px;"><strong>3 year or 5 year</strong> forgivable; or <strong>10 year</strong> repayable</p>
+        <p style="margin-bottom:6px;">FHA and USDA loans only</p>
+        <p style="margin-bottom:6px;">No first-time homebuyer requirement</p>
+        <p style="margin-bottom:0;">No income limits</p>
+      </div>
+    </div></div>
+  </div>
+</div>
+
+<!-- SPECIALTY PANELS -->
+<div id="panel-condotel" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div><div class="prod-name">Condotel</div></div>
+  <div class="prod-tag">Specialty</div>
+  <p class="prod-desc">Financing for condominium-hotel (condotel) units where the property operates as part of a hotel program. Available up to 75% LTV for eligible properties.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">75%</div></div><div class="hl"><div class="hl-lbl">Property Type</div><div class="hl-val">Condotel Units</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">25%</div></div></div>
+</div>
+
+<div id="panel-itin" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="prod-name">ITIN</div></div>
+  <div class="prod-tag">Specialty</div>
+  <p class="prod-desc">Mortgage financing for borrowers using an Individual Taxpayer Identification Number (ITIN) rather than a Social Security Number. Available up to 90% LTV.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">90%</div></div><div class="hl"><div class="hl-lbl">ID Requirement</div><div class="hl-val">ITIN Accepted</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">10%</div></div></div>
+</div>
+
+<div id="panel-foreign" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="prod-name">Foreign National</div></div>
+  <div class="prod-tag">Specialty</div>
+  <p class="prod-desc">Mortgage financing for non-U.S. citizens purchasing property in the United States. Available up to 70% LTV for qualifying foreign national borrowers.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">70%</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">30%</div></div><div class="hl"><div class="hl-lbl">Citizenship</div><div class="hl-val">Non-U.S. Citizens</div></div></div>
+</div>
+
+<div id="panel-dscr" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="prod-name">DSCR</div></div>
+  <div class="prod-tag">Non-QM / Investor</div>
+  <p class="prod-desc">Debt Service Coverage Ratio loans qualify investors based on rental income from the property. Available up to 85% LTV using rental income to qualify &mdash; no personal income documentation required.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">85%</div></div><div class="hl"><div class="hl-lbl">Qualification</div><div class="hl-val">Rental Income</div></div><div class="hl"><div class="hl-lbl">Min. DSCR</div><div class="hl-val">1.0x</div></div><div class="hl"><div class="hl-lbl">Income Docs</div><div class="hl-val">Not Required</div></div></div>
+</div>
+
+<div id="panel-manufactured" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><rect x="9" y="12" width="6" height="9"/></svg></div><div class="prod-name">Manufactured Housing</div></div>
+  <div class="prod-tag">Specialty</div>
+  <p class="prod-desc">Financing for manufactured housing including double-wide and single-wide units. Available through FHA, VA, USDA, and conventional programs for qualifying properties titled as real property.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Unit Types</div><div class="hl-val">Double &amp; Single Wide</div></div><div class="hl"><div class="hl-lbl">Loan Types</div><div class="hl-val">FHA, VA, USDA, Conv</div></div><div class="hl"><div class="hl-lbl">Title</div><div class="hl-val">Real Property</div></div></div>
+</div>
+
+<div id="panel-nonconf" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="prod-name">Non-Conforming Jumbo</div></div>
+  <div class="prod-tag">Non-Conforming</div>
+  <p class="prod-desc">Jumbo loan financing for high-value properties exceeding conforming loan limits. Available up to 80% LTV for qualified borrowers with strong credit profiles.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">80%</div></div><div class="hl"><div class="hl-lbl">Loan Amount</div><div class="hl-val">&gt; $806,500</div></div><div class="hl"><div class="hl-lbl">Min. Credit Score</div><div class="hl-val">700+</div></div><div class="hl"><div class="hl-lbl">Reserves</div><div class="hl-val">6&ndash;12 months</div></div></div>
+</div>
+
+<div id="panel-bankstmt" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="prod-name">Bank Statements</div></div>
+  <div class="prod-tag">Non-QM</div>
+  <p class="prod-desc">Qualify self-employed borrowers using personal or business bank statements instead of tax returns. Available up to 90% LTV using either personal or business statements to determine qualifying income.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">90%</div></div><div class="hl"><div class="hl-lbl">Statement Types</div><div class="hl-val">Personal or Business</div></div><div class="hl"><div class="hl-lbl">Tax Returns</div><div class="hl-val">Not Required</div></div><div class="hl"><div class="hl-lbl">Ideal For</div><div class="hl-val">Self-Employed</div></div></div>
+</div>
+
+<div id="panel-assetdep" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div class="prod-name">Asset Depletion</div></div>
+  <div class="prod-tag">Non-QM</div>
+  <p class="prod-desc">Determine qualifying income by using qualified assets rather than employment income. Ideal for retired or high-net-worth borrowers with significant assets but limited traditional income documentation.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Income Source</div><div class="hl-val">Qualified Assets</div></div><div class="hl"><div class="hl-lbl">Traditional Docs</div><div class="hl-val">Not Required</div></div><div class="hl"><div class="hl-lbl">Ideal For</div><div class="hl-val">Retirees / HNW</div></div></div>
+</div>
+
+<div id="panel-nonwcondo" class="panel">
+  <div class="prod-head"><div class="prod-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></div><div class="prod-name">Non-Warrantable Condo</div></div>
+  <div class="prod-tag">Specialty</div>
+  <p class="prod-desc">Financing for condo units that do not meet standard Fannie Mae or Freddie Mac warrantability requirements due to investor concentration, commercial space, or other project characteristics. Available up to 80% LTV.</p>
+  <div class="highlights"><div class="hl"><div class="hl-lbl">Max LTV</div><div class="hl-val">80%</div></div><div class="hl"><div class="hl-lbl">Project Review</div><div class="hl-val">Required</div></div><div class="hl"><div class="hl-lbl">Min. Down Payment</div><div class="hl-val">20%</div></div></div>
+</div>
+
+</div></div>
+
+<footer>
+  <p style="margin-bottom:6px;">
+    <a href="https://eustisalliance.com/privacy-policy/">Privacy Policy</a>
+    <a href="https://eustisalliance.com/legal/">Licensing / Disclosures</a>
+    <a href="https://www.nmlsconsumeraccess.org/">NMLS #70345</a>
+  </p>
+  <p>Equal Housing Lender. Loan programs not available in all states. All loans subject to credit and property approval. &copy; 2026 Eustis Mortgage Alliance.</p>
+  <p style="margin-top:4px;">1477 Louisiana Ave, Suite 101, New Orleans, LA 70115 &nbsp;|&nbsp; Main: (504) 586-0075 &nbsp;|&nbsp; TPO: (318) 680-0517 &nbsp;|&nbsp; Partnerships: (225) 276-0860 &nbsp;|&nbsp; alliance@eustismortgage.com</p>
+</footer>
+
+<script>
+function showPanel(id, el, subId) {
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.nav-item').forEach(function(n){n.classList.remove('active');});
+  var panel = document.getElementById('panel-' + id);
+  if (panel) panel.classList.add('active');
+  if (el) el.classList.add('active');
+  if (subId) {
+    var allSubs = panel.querySelectorAll('.subpanel');
+    allSubs.forEach(function(s){s.classList.remove('active');});
+    var sub = document.getElementById(subId);
+    if (sub) sub.classList.add('active');
+    var tabs = panel.querySelectorAll('.subtab');
+    tabs.forEach(function(t){
+      t.classList.remove('active');
+      if (t.getAttribute('onclick') && t.getAttribute('onclick').indexOf("'" + subId + "'") > -1) {
+        t.classList.add('active');
+      }
+    });
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showSub(tabEl, panelId, subId) {
+  var panel = document.getElementById('panel-' + panelId);
+  if (!panel) return;
+  panel.querySelectorAll('.subtab').forEach(function(t){t.classList.remove('active');});
+  tabEl.classList.add('active');
+  panel.querySelectorAll('.subpanel').forEach(function(s){s.classList.remove('active');});
+  var sub = document.getElementById(subId);
+  if (sub) sub.classList.add('active');
+}
+</script>
+</body>
+</html>
